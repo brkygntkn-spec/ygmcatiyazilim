@@ -1,0 +1,6 @@
+{
+  "name": "Çatı Yetenek ve Performans Yönetim Sistemi",
+  "description": "Entegre Yetenek, Bireysel Performans, 360 Derece Yetkinlik, Nine-Box Kalibrasyon, İç Terfi ve Geçici Görevlendirme Platformu.",
+  "requestFramePermissions": [],
+  "majorCapabilities": ["MAJOR_CAPABILITY_SERVER_SIDE_GEMINI_API"]
+}
