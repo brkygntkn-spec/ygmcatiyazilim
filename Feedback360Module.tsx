@@ -17,9 +17,9 @@ import {
   Users,
   X,
 } from 'lucide-react';
-import { useAuth } from '../context/AuthContext';
-import { useTalentStore } from '../context/TalentStore';
-import { CompetencyDefinition, RaterAssignment, RaterRelation } from '../types/talent';
+import { useAuth } from './AuthContext';
+import { useTalentStore } from './TalentStore';
+import { CompetencyDefinition, RaterAssignment, RaterRelation } from './talent';
 import {
   calculate360Analytics,
   formatTrDate,
@@ -27,8 +27,8 @@ import {
   getInitials,
   scaleLevelToScore100,
   score100ToScaleValue,
-} from '../utils/calculations';
-import { exportWorkbookToXlsx } from '../utils/excelExport';
+} from './calculations';
+import { exportWorkbookToXlsx } from './excelExport';
 
 const RELATION_LABELS: Record<RaterRelation, string> = {
   MANAGER: 'Üst Yönetici',

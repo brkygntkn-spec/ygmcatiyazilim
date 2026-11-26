@@ -1,6 +1,6 @@
 import React, { createContext, useCallback, useContext, useEffect, useState } from 'react';
-import type { AuthStatusResponse, AuthUser, UserPermissions } from '../types/auth';
-import type { DepartmentName, UserRole } from '../types/talent';
+import type { AuthStatusResponse, AuthUser, UserPermissions } from './auth';
+import type { DepartmentName, UserRole } from './talent';
 
 interface CreateUserPayload {
   fullName: string;

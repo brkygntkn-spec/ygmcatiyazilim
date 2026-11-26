@@ -10,9 +10,9 @@ import {
   Search,
   Users,
 } from 'lucide-react';
-import { useAuth } from '../context/AuthContext';
-import { useTalentStore } from '../context/TalentStore';
-import { NineBoxId } from '../types/talent';
+import { useAuth } from './AuthContext';
+import { useTalentStore } from './TalentStore';
+import { NineBoxId } from './talent';
 import {
   calculate360Analytics,
   calculateCombinedPotentialIndex,
@@ -23,8 +23,8 @@ import {
   getInitials,
   getRemainingDays,
   NINE_BOX_GRID_ORDER,
-} from '../utils/calculations';
-import { exportWorkbookToXlsx } from '../utils/excelExport';
+} from './calculations';
+import { exportWorkbookToXlsx } from './excelExport';
 
 export const DashboardModule: React.FC = () => {
   const {

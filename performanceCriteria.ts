@@ -3,7 +3,7 @@ import type {
   PerformanceDimensionId,
   PerformanceTermEvaluation,
   PerformanceTermKey,
-} from '../types/talent';
+} from './talent';
 
 export const PERFORMANCE_TERM_KEYS: PerformanceTermKey[] = [
   '1. Dönem',

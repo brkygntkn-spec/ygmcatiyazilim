@@ -17,9 +17,9 @@ import {
   Users,
   X,
 } from 'lucide-react';
-import { EmployeeFormModal } from '../components/EmployeeFormModal';
-import { useTalentStore } from '../context/TalentStore';
-import { Employee, ParsedEmployeeImportRow } from '../types/talent';
+import { EmployeeFormModal } from './EmployeeFormModal';
+import { useTalentStore } from './TalentStore';
+import { Employee, ParsedEmployeeImportRow } from './talent';
 import {
   calculate360Analytics,
   formatTrDate,
@@ -27,12 +27,12 @@ import {
   getEffectiveNineBoxId,
   getEffectivePerformanceScore,
   getInitials,
-} from '../utils/calculations';
+} from './calculations';
 import {
   downloadEmployeeImportTemplateXlsx,
   exportMasterEmployeesToXlsx,
   parseEmployeeExcelFile,
-} from '../utils/excelExport';
+} from './excelExport';
 
 export const EmployeesModule: React.FC = () => {
   const {

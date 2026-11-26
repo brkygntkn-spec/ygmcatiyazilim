@@ -7,8 +7,8 @@ import {
   INITIAL_MOBILITY_REQUESTS,
   INITIAL_NOTIFICATIONS,
   INITIAL_SYSTEM_RULES,
-} from '../data/seedData';
-import { INITIAL_PLATFORM_CONFIG } from '../data/platformConfigSeed';
+} from './seedData';
+import { INITIAL_PLATFORM_CONFIG } from './platformConfigSeed';
 import {
   AssignmentCategory,
   CompetencyDefinition,
@@ -35,17 +35,17 @@ import {
   TemporaryAssignment,
   ToastMessage,
   UserRole,
-} from '../types/talent';
+} from './talent';
 import {
   calculateWeightedKpiScore,
   getDaysBetween,
   REFERENCE_TODAY,
-} from '../utils/calculations';
+} from './calculations';
 import {
   calculateAnnualPerformanceScore,
   classifyPerformanceScore,
   createEmptyTermEvaluation,
-} from '../data/performanceCriteria';
+} from './performanceCriteria';
 
 interface TalentContextValue {
   // Navigation & Global View State

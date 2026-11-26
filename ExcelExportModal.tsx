@@ -6,12 +6,12 @@ import {
   Square,
   X,
 } from 'lucide-react';
-import { useTalentStore } from '../context/TalentStore';
-import { EvaluationPeriod } from '../types/talent';
+import { useTalentStore } from './TalentStore';
+import { EvaluationPeriod } from './talent';
 import {
   ComprehensiveReportSelection,
   exportComprehensiveReportXlsx,
-} from '../utils/excelExport';
+} from './excelExport';
 
 export const ExcelExportModal: React.FC = () => {
   const {

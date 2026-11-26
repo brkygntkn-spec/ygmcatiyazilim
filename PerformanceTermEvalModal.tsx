@@ -16,14 +16,14 @@ import {
   PERFORMANCE_DIMENSIONS,
   PERFORMANCE_TERM_KEYS,
   RESPONSIBILITY_DECLARATION_TEXT,
-} from '../data/performanceCriteria';
+} from './performanceCriteria';
 import {
   Employee,
   PerformanceDimensionId,
   PerformanceTermEvaluation,
   PerformanceTermKey,
-} from '../types/talent';
-import { formatTrDate, REFERENCE_TODAY } from '../utils/calculations';
+} from './talent';
+import { formatTrDate, REFERENCE_TODAY } from './calculations';
 
 interface PerformanceTermEvalModalProps {
   employee: Employee;

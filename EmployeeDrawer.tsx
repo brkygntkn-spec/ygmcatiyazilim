@@ -23,7 +23,7 @@ import {
   X,
   XCircle,
 } from 'lucide-react';
-import { useTalentStore } from '../context/TalentStore';
+import { useTalentStore } from './TalentStore';
 import {
   calculate360Analytics,
   calculateCombinedPotentialIndex,
@@ -34,13 +34,13 @@ import {
   getEffectivePerformanceScore,
   getInitials,
   getRemainingDays,
-} from '../utils/calculations';
-import { exportSingleEmployeeSicilXlsx } from '../utils/excelExport';
+} from './calculations';
+import { exportSingleEmployeeSicilXlsx } from './excelExport';
 import {
   classifyPerformanceScore,
   getEmployeeTermSummary,
   PERFORMANCE_TERM_KEYS,
-} from '../data/performanceCriteria';
+} from './performanceCriteria';
 import { EmployeeFormModal } from './EmployeeFormModal';
 
 type DrawerTab = 'sicil' | 'summary' | 'competency360' | 'assignments' | 'history';

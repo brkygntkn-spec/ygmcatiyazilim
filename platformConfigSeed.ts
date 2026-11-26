@@ -1,10 +1,10 @@
-import type { PlatformConfig } from '../types/talent';
+import type { PlatformConfig } from './talent';
 import {
   APPROVAL_STEPS,
   EVALUATION_PERIODS,
   NINE_BOX_CATALOG,
   PERFORMANCE_STAGES,
-} from '../utils/calculations';
+} from './calculations';
 
 export const INITIAL_PLATFORM_CONFIG: PlatformConfig = {
   platformName: 'Çatı Yetenek',

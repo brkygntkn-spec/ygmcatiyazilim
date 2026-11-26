@@ -14,7 +14,7 @@ import {
   Trash2,
   X,
 } from 'lucide-react';
-import { useTalentStore } from '../context/TalentStore';
+import { useTalentStore } from './TalentStore';
 import {
   classifyPerformanceScore,
   countFilledDimensionNotes,
@@ -22,20 +22,20 @@ import {
   PERFORMANCE_DIMENSIONS,
   PERFORMANCE_TERM_KEYS,
   PerformanceBandLabel,
-} from '../data/performanceCriteria';
+} from './performanceCriteria';
 import {
   Employee,
   KPIItem,
   PerformanceTermKey,
   PerformanceWorkflowStage,
-} from '../types/talent';
+} from './talent';
 import {
   calculateWeightedKpiScore,
   getEffectivePerformanceScore,
   getInitials,
-} from '../utils/calculations';
-import { exportWorkbookToXlsx } from '../utils/excelExport';
-import { PerformanceTermEvalModal } from '../components/PerformanceTermEvalModal';
+} from './calculations';
+import { exportWorkbookToXlsx } from './excelExport';
+import { PerformanceTermEvalModal } from './PerformanceTermEvalModal';
 
 export const PerformanceModule: React.FC = () => {
   const {

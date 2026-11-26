@@ -13,17 +13,17 @@ import {
   StopCircle,
   X,
 } from 'lucide-react';
-import { useAuth } from '../context/AuthContext';
-import { useTalentStore } from '../context/TalentStore';
-import { AssignmentCategory, TemporaryAssignment } from '../types/talent';
+import { useAuth } from './AuthContext';
+import { useTalentStore } from './TalentStore';
+import { AssignmentCategory, TemporaryAssignment } from './talent';
 import {
   formatTrDate,
   getDaysBetween,
   getInitials,
   getRemainingDays,
   REFERENCE_TODAY,
-} from '../utils/calculations';
-import { exportWorkbookToXlsx } from '../utils/excelExport';
+} from './calculations';
+import { exportWorkbookToXlsx } from './excelExport';
 
 export const AssignmentsModule: React.FC = () => {
   const { currentUser } = useAuth();

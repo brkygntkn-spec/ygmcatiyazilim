@@ -15,12 +15,12 @@ import {
   UserX,
   X,
 } from 'lucide-react';
-import { useAuth } from '../context/AuthContext';
-import { useTalentStore } from '../context/TalentStore';
-import { getDefaultPermissionsForRole } from '../types/auth';
-import type { AuthUser, UserPermissions } from '../types/auth';
-import type { DepartmentName, ModuleKey, UserRole } from '../types/talent';
-import { formatTrDate, getInitials } from '../utils/calculations';
+import { useAuth } from './AuthContext';
+import { useTalentStore } from './TalentStore';
+import { getDefaultPermissionsForRole } from './auth';
+import type { AuthUser, UserPermissions } from './auth';
+import type { DepartmentName, ModuleKey, UserRole } from './talent';
+import { formatTrDate, getInitials } from './calculations';
 
 const ROLE_LABELS: Record<UserRole, string> = {
   ADMIN: 'İK / Sistem Yöneticisi',

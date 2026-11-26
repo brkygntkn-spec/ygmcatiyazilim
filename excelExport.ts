@@ -14,7 +14,7 @@ import {
   SystemRules,
   TemporaryAssignment,
   WorkModel,
-} from '../types/talent';
+} from './talent';
 import {
   calculate360Analytics,
   calculateCombinedPotentialIndex,
@@ -26,7 +26,7 @@ import {
   getRemainingDays,
   REFERENCE_TODAY,
 } from './calculations';
-import { getEmployeeTermSummary } from '../data/performanceCriteria';
+import { getEmployeeTermSummary } from './performanceCriteria';
 
 export interface ExcelSheetDefinition {
   name: string;

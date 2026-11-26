@@ -1,18 +1,18 @@
 import React from 'react';
-import { EmployeeDrawer } from './components/EmployeeDrawer';
-import { ExcelExportModal } from './components/ExcelExportModal';
-import { Layout } from './components/Layout';
-import { LoginScreen } from './components/LoginScreen';
-import { AuthProvider, useAuth } from './context/AuthContext';
-import { TalentProvider, useTalentStore } from './context/TalentStore';
-import { AssignmentsModule } from './modules/AssignmentsModule';
-import { DashboardModule } from './modules/DashboardModule';
-import { EmployeesModule } from './modules/EmployeesModule';
-import { Feedback360Module } from './modules/Feedback360Module';
-import { MobilityModule } from './modules/MobilityModule';
-import { NineBoxModule } from './modules/NineBoxModule';
-import { PerformanceModule } from './modules/PerformanceModule';
-import { SettingsModule } from './modules/SettingsModule';
+import { EmployeeDrawer } from './EmployeeDrawer';
+import { ExcelExportModal } from './ExcelExportModal';
+import { Layout } from './Layout';
+import { LoginScreen } from './LoginScreen';
+import { AuthProvider, useAuth } from './AuthContext';
+import { TalentProvider, useTalentStore } from './TalentStore';
+import { AssignmentsModule } from './AssignmentsModule';
+import { DashboardModule } from './DashboardModule';
+import { EmployeesModule } from './EmployeesModule';
+import { Feedback360Module } from './Feedback360Module';
+import { MobilityModule } from './MobilityModule';
+import { NineBoxModule } from './NineBoxModule';
+import { PerformanceModule } from './PerformanceModule';
+import { SettingsModule } from './SettingsModule';
 
 const ActiveModuleView: React.FC = () => {
   const { currentUser } = useAuth();

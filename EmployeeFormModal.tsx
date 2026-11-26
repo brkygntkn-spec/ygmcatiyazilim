@@ -1,6 +1,6 @@
 import React, { useMemo, useState } from 'react';
 import { Save, UserPlus, X } from 'lucide-react';
-import { useTalentStore } from '../context/TalentStore';
+import { useTalentStore } from './TalentStore';
 import {
   EducationLevel,
   Employee,
@@ -9,8 +9,8 @@ import {
   EmploymentType,
   GenderType,
   WorkModel,
-} from '../types/talent';
-import { REFERENCE_TODAY } from '../utils/calculations';
+} from './talent';
+import { REFERENCE_TODAY } from './calculations';
 
 interface EmployeeFormModalProps {
   employee?: Employee | null;

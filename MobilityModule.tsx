@@ -11,19 +11,19 @@ import {
   X,
   XCircle,
 } from 'lucide-react';
-import { useAuth } from '../context/AuthContext';
-import { useTalentStore } from '../context/TalentStore';
+import { useAuth } from './AuthContext';
+import { useTalentStore } from './TalentStore';
 import {
   DepartmentName,
   MobilityProcessType,
   MobilityRequest,
-} from '../types/talent';
+} from './talent';
 import {
   evaluatePromotionEligibility,
   formatTrDate,
   getInitials,
-} from '../utils/calculations';
-import { exportWorkbookToXlsx } from '../utils/excelExport';
+} from './calculations';
+import { exportWorkbookToXlsx } from './excelExport';
 
 export const MobilityModule: React.FC = () => {
   const { currentUser } = useAuth();

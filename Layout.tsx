@@ -26,10 +26,10 @@ import {
   Users,
   X,
 } from 'lucide-react';
-import { useAuth } from '../context/AuthContext';
-import { useTalentStore } from '../context/TalentStore';
-import { EvaluationPeriod, ModuleKey, SettingsSubTab, UserRole } from '../types/talent';
-import { formatTrDate, getInitials } from '../utils/calculations';
+import { useAuth } from './AuthContext';
+import { useTalentStore } from './TalentStore';
+import { EvaluationPeriod, ModuleKey, SettingsSubTab, UserRole } from './talent';
+import { formatTrDate, getInitials } from './calculations';
 
 interface NavGroup {
   id: string;

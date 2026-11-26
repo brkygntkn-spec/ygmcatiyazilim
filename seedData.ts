@@ -9,7 +9,7 @@ import {
   RaterAssignment,
   SystemRules,
   TemporaryAssignment,
-} from '../types/talent';
+} from './talent';
 import { buildDefaultTermEvaluations } from './performanceCriteria';
 
 export const INITIAL_SYSTEM_RULES: SystemRules = {

@@ -15,15 +15,15 @@ import {
   Trash2,
   Users,
 } from 'lucide-react';
-import { useAuth } from '../context/AuthContext';
-import { useTalentStore } from '../context/TalentStore';
+import { useAuth } from './AuthContext';
+import { useTalentStore } from './TalentStore';
 import type {
   FeatureFlags,
   KpiTemplateItem,
   NineBoxId,
   PlatformConfig,
-} from '../types/talent';
-import { NINE_BOX_GRID_ORDER } from '../utils/calculations';
+} from './talent';
+import { NINE_BOX_GRID_ORDER } from './calculations';
 
 type StudioSection = 'features' | 'kpis' | 'processes';
 

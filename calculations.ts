@@ -10,7 +10,7 @@ import {
   RaterRelation,
   SystemRules,
   TemporaryAssignment,
-} from '../types/talent';
+} from './talent';
 
 export const EVALUATION_PERIODS: EvaluationPeriod[] = [
   '2026 Yıl Sonu Dönemi',

@@ -18,8 +18,8 @@ import {
   Users,
   X,
 } from 'lucide-react';
-import { useAuth } from '../context/AuthContext';
-import { useTalentStore } from '../context/TalentStore';
+import { useAuth } from './AuthContext';
+import { useTalentStore } from './TalentStore';
 import {
   CompetencyDefinition,
   CompetencySubKpi,
@@ -27,8 +27,8 @@ import {
   Scale360Config,
   Scale360Level,
   SystemRules,
-} from '../types/talent';
-import { scaleLevelToScore100, score100ToScaleValue } from '../utils/calculations';
+} from './talent';
+import { scaleLevelToScore100, score100ToScaleValue } from './calculations';
 
 const PREVIEW_RELATION_LABELS: Record<RaterRelation, string> = {
   MANAGER: 'Üst Yönetici',

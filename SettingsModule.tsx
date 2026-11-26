@@ -11,14 +11,14 @@ import {
   SlidersHorizontal,
   Users,
 } from 'lucide-react';
-import { useAuth } from '../context/AuthContext';
-import { useTalentStore } from '../context/TalentStore';
-import { INITIAL_SYSTEM_RULES } from '../data/seedData';
-import { SystemRules } from '../types/talent';
+import { useAuth } from './AuthContext';
+import { useTalentStore } from './TalentStore';
+import { INITIAL_SYSTEM_RULES } from './seedData';
+import { SystemRules } from './talent';
 import {
   evaluatePromotionEligibility,
   getEffectiveNineBoxId,
-} from '../utils/calculations';
+} from './calculations';
 import { Config360Panel } from './Config360Panel';
 import { PlatformStudioPanel } from './PlatformStudioPanel';
 import { UserManagementPanel } from './UserManagementPanel';
